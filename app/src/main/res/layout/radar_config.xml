@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/radar_information"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Infromation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/radar_on"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="On" />
+            <Button
+                android:id="@+id/radar_off"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Off" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edit_radar_range"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="6"
+                android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/set_range"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="range" />
+
+            <Button
+                android:id="@+id/set_gain"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="gain" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/set_rain"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="rain" />
+            <Button
+                android:id="@+id/set_sea"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="sea" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

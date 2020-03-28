@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight='0.4'
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/subtoplayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight='0.7'
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/control_mode">
+
+                <RadioButton
+                    android:id="@+id/manual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manual" />
+
+                <RadioButton
+                    android:id="@+id/semiauto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Semi Auto" />
+
+                <RadioButton
+                    android:id="@+id/followwps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Follow WPs" />
+
+                <RadioButton
+                    android:id="@+id/stay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stay" />
+            </RadioGroup>
+            <Button
+                android:id="@+id/config_route"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.333"
+                android:text="Route" />
+            <Button
+                android:id="@+id/config_radar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.333"
+                android:text="Radar" />
+            <Button
+                android:id="@+id/config_network"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.333"
+                android:text="Network" />
+            <Button
+                android:id="@+id/status_monitor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.333"
+                android:text="Status" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subbottomlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight='0.3'
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/englayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight='0.25'
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/gp_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight='0.33'
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/englayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight='0.66'
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/engf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.333"
+
+                        android:text="F" />
+                    <Button
+                        android:id="@+id/engn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.333"
+                        android:text="N" />
+                    <Button
+                        android:id="@+id/engb"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.333"
+                        android:text="B" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rudderlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight='0.75'
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/rudp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.333"
+                    android:text="P" />
+                <Button
+                    android:id="@+id/rudm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.333"
+                    android:text="M" />
+                <Button
+                    android:id="@+id/ruds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.333"
+                    android:text="S" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
